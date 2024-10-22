@@ -9,7 +9,7 @@ function AboutUs() {
         SHAP Solutions is dedicated to providing top-notch consulting services to help businesses succeed. Our experienced team works closely with clients to tailor solutions that meet their specific needs.
       </p>
       <p className="text-md text-gray-600 mb-4">
-        Founded in [Year], we have a proven track record of delivering results and building long-lasting relationships with our clients.
+        Founded in July 2024, we have a proven track record of delivering results and building long-lasting relationships with our clients.
       </p>
     </div>
   );

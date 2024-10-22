@@ -4,12 +4,13 @@ import companyLogo from './assets/logo.png'; // Import the company logo
 import Clients from './Clients';
 import Tenders from './Tenders';
 import AboutUs from './AboutUs';
-import Contact from './Contact'; // Assuming you will create this component
+import Contact from './Contact'; 
+import OurTeam from './OurTeam'; // Import the OurTeam component
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col items-center justify-start bg-white p-6 w-full max-w-7xl mx-auto">
+      <div className="min-h-screen flex flex-col items-center justify-start bg-lavender p-6 w-full max-w-7xl mx-auto">
         {/* Company logo */}
         <img 
           src={companyLogo} 
@@ -19,6 +20,7 @@ function App() {
 
         <h1 className="text-5xl font-bold text-gray-800 mb-4 text-center">Welcome to SHAP Solutions</h1>
 
+        {/* Navigation Links */}
         <nav className="mb-8">
           <NavLink 
             to="/" 
@@ -45,6 +47,11 @@ function App() {
             className={({ isActive }) => `text-gray-800 mx-4 hover:underline ${isActive ? 'font-bold' : ''}`}>
             Contact Us
           </NavLink>
+          <NavLink 
+            to="/our-team" 
+            className={({ isActive }) => `text-gray-800 mx-4 hover:underline ${isActive ? 'font-bold' : ''}`}>
+            Our Team
+          </NavLink>
         </nav>
 
         <Routes>
@@ -52,10 +59,11 @@ function App() {
           <Route path="/clients" element={<Clients />} />
           <Route path="/tenders" element={<Tenders />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} /> {/* Ensure this component is created */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/our-team" element={<OurTeam />} /> {/* New Our Team Route */}
         </Routes>
 
-        <p className="text-gray-600 mt-4 text-center">
+        <p className="text-gray-600 mt-4 text-center" pd-2>
           &copy; {new Date().getFullYear()} SHAP Solutions. All rights reserved.
         </p>
       </div>

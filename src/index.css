@@ -5,6 +5,7 @@ html, body {
   width: 100%;       /* Ensure the body takes the full width */
   height: 100%;      /* Ensure the body takes the full height */
   overflow-x: hidden; /* Prevent horizontal overflow */
+  background-color: lavender;
 }
 
 #root {
@@ -12,5 +13,4 @@ html, body {
   height: 100%; /* Ensure the root div takes the full height */
   display: flex; /* Optional: for flex layout */
   justify-content: center; /* Optional: center content */
-  align-items: center; /* Optional: center content */
 }
