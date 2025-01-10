@@ -11,7 +11,7 @@ function Tenders() {
     <div className="text-center p-6">
       <h2 className="text-3xl font-bold mb-4">Our Tenders</h2>
       <p className="text-lg text-gray-800 mb-8">
-        At SHAP Solutions, we are committed to delivering high-quality services through various tenders across multiple sectors.
+        At SHAP Solutions, we are committed to delivering high-quality services.
       </p>
 
       {/* Adjusted container */}
